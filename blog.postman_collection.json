@@ -1,0 +1,345 @@
+{
+	"info": {
+		"_postman_id": "a4663f9f-f139-429d-9168-4d40a902f471",
+		"name": "blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "123456",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost/blog/api/user/user?id=19",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blog",
+								"api",
+								"user",
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "19"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "123",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost/blog/api/user/user",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blog",
+								"api",
+								"user",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "123456",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"eka\",\n    \"email\": \"ekapratama@test.test\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/blog/api/user/user",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blog",
+								"api",
+								"user",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "123456",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 19,\n    \"username\": \"eka-update\",\n    \"password\": 123456\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/blog/api/user/user",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blog",
+								"api",
+								"user",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "123456",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost/blog/api/user/user/18",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blog",
+								"api",
+								"user",
+								"user",
+								"18"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "blog",
+			"item": [
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "123456",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost/blog/api/blog/blog?id=1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blog",
+								"api",
+								"blog",
+								"blog"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "123",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost/blog/api/blog/blog",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blog",
+								"api",
+								"blog",
+								"blog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "123456",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "ini title baru",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "ini content baru",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/home/ekapratama/Pictures/cosmetic-2 (1).png"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/blog/api/blog/blog",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blog",
+								"api",
+								"blog",
+								"blog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "123456",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"title\": \"update artikel pertama\",\n    \"content\": \"update content artikel pertama\",\n    \"image\": \"image\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/blog/api/blog/blog",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blog",
+								"api",
+								"blog",
+								"blog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "123456",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost/blog/api/blog/blog/2",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blog",
+								"api",
+								"blog",
+								"blog",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
